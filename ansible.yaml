@@ -5,7 +5,7 @@
   - name: insatll nginx
     ansible.builtin.dnf:
       name: nginx
-      state: removed
+      state: latest
   - name: start service
     ansible.builtin.service:
       name: nginx
