@@ -1,0 +1,13 @@
+- name: insatll and run the nginx
+  hosts: web
+  become: yes
+  tasks:
+  - name: insatll nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+  - name: start service
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
