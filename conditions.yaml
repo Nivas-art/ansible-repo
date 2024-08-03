@@ -1,0 +1,11 @@
+- name: istall nginx
+  hosts: web
+  become: yes
+  tasks:
+  - name: command pass
+    ansible.builtin.debug: id expense
+
+  - name: print
+    ansible.builtin.debug:
+     msg: "hi"
+
