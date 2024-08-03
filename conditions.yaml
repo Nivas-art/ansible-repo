@@ -13,7 +13,7 @@
 
   
   - name: command passes
-    ansible.builtin.command: useradd srinu
+    ansible.builtin.command: useradd raj
     when: myexpn.rc != 0
 
   - name: print
