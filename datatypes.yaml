@@ -13,5 +13,5 @@
       linux: 10
       aws: 20
     certified: yes #boolean
-  ansible.builtin.debug:
-    msg: "{{course}}, {{tootls}}, {{duration}}, {{certified}}"
+    ansible.builtin.debug:
+      msg: "{{course}}, {{tootls}}, {{duration}}, {{certified}}"
