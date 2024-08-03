@@ -1,9 +1,9 @@
 - name: variable declare
   hosts: localhost
   vars:
-    COURSE: "devops"
-    DURATION: "120h"
+    Course: "devops"
+    Duration: "120h"
   tasks:
   - name: print info
     ansible.builtin.debug:
-      mgs: "course is {{COURSE}}, Duratioms is {{DURATION}}."
+      mgs: "course is {{Course}}, Duratioms is {{Duration}}"
