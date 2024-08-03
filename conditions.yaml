@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: command pass
-    ansible.builtin.command: id expense
+    ansible.builtin.command: id srinu
     ignore_errors: true
     register: myexpn
 
