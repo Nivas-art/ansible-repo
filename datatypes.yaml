@@ -3,15 +3,15 @@
   become: yes
   tasks:
   - name: print onfo
-    course: devops with aws #string
-    tools: # lists
-    - linux
-    - terrafom
-    - docker
-    duration: #map or dicstionary and number
-      devops: 30
-      linux: 10
-      aws: 20
-    certified: yes #boolean
-    ansible.builtin.debug:
-      msg: "{{course}}, {{tools}}, {{duration}}, {{certified}}"
+      course: devops with aws #string
+      tools: # lists
+      - linux
+      - terrafom
+      - docker
+      duration: #map or dicstionary and number
+        devops: 30
+        linux: 10
+        aws: 20
+      certified: yes #boolean
+      ansible.builtin.debug:
+        msg: "{{course}}, {{tools}}, {{duration}}, {{certified}}"
