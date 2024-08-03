@@ -5,5 +5,5 @@
     DURATION: "120h"
   tasks:
   - name: print info
-    ansible.builtion.debug:
+    ansible.builtin.debug:
       mgs: "course_is {{COURSE}}, Duratioms is {{DURATION}}"
