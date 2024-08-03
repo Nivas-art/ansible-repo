@@ -4,8 +4,9 @@
   tasks:
   - name: command pass
     ansible.builtin.command: id expense
+    register: myexpn
 
   - name: print
     ansible.builtin.debug:
-     msg: "hi"
+      msg: "hi"
 
