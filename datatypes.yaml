@@ -1,5 +1,6 @@
 - name: data types
   hosts: localhost
+  become: yes
   tasks:
   - name: print onfo
     course: devops with aws #string
