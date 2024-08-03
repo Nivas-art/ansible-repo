@@ -12,9 +12,9 @@
       msg: "{{myexpn}}"
 
   
-  #- name: command passes
-   # ansible.builtin.command: useradd expense
-    #when: myexpn !=0
+  - name: command passes
+    ansible.builtin.command: useradd srinu
+    when: myexpn !=0
 
   - name: print
     ansible.builtin.debug:
