@@ -3,4 +3,4 @@
   tasks:
   - name:
     ansible.builtin.debug:
-      msg: "{{course}}, {{duration}}"
+      msg: "{{COURSE}}, {{DURATION}}"
