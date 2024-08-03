@@ -1,0 +1,9 @@
+- name: variable from task
+  hosts: localhost
+  tasks:
+  - name: print info
+    vars:
+      course: "aws"
+      duration: "120"
+    ansible.builtin.debug:
+      msg: "cousrse is: {{course}}, duraions is: {{duration}}"
