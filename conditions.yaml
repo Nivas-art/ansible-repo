@@ -4,6 +4,7 @@
   tasks:
   - name: command pass
     ansible.builtin.command: id expense
+    ignore_errors: true
     register: myexpn
 
   - name: print
