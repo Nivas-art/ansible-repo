@@ -1,17 +1,18 @@
 - name: data types
   hosts: localhost
   become: yes
+  vars:
+    course: devops with aws #string
+    tools: # lists
+    - linux
+    - terrafom
+    - docker
+    duration: #map or dicstionary and number
+      devops: 30
+      linux: 10
+      aws: 20
+    certified: yes #boolean
   tasks:
-  - name: print onfo
-      course: devops with aws #string
-      tools: # lists
-      - linux
-      - terrafom
-      - docker
-      duration: #map or dicstionary and number
-        devops: 30
-        linux: 10
-        aws: 20
-      certified: yes #boolean
-      ansible.builtin.debug:
-        msg: "{{course}}, {{tools}}, {{duration}}, {{certified}}"
+  - name: print info
+    ansible.builtin.debug:
+      msg: "{{course}}, {{tools}}, {{duration}}, {{certified}}"
