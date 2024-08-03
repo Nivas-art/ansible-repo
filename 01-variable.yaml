@@ -6,4 +6,4 @@
   tasks:
   - name: print info
     ansible.builtin.debug:
-      mgs: "course_is {{COURSE}}, Duratioms is {{DURATION}}"
+      mgs: "course is {{COURSE}}, Duratioms is {{DURATION}}."
