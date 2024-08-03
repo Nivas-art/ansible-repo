@@ -1,0 +1,6 @@
+- name: variable from arg
+  hosts: localhost
+  tasks:
+  - name:
+    ansible.builtin.debug:
+      msg: "{{course}}, {{duration}}"
