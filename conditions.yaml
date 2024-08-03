@@ -6,10 +6,15 @@
     ansible.builtin.command: id expense
     ignore_errors: true
     register: myexpn
+
+  - name: print myexpn
+    ansible.builtin.debug:
+      msg: "{{myexpn}}"
+
   
-  - name: command passes
-    ansible.builtin.command: useradd expense
-    when: myexpn !=0
+  #- name: command passes
+   # ansible.builtin.command: useradd expense
+    #when: myexpn !=0
 
   - name: print
     ansible.builtin.debug:
