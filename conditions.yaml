@@ -14,7 +14,7 @@
   
   - name: command passes
     ansible.builtin.command: useradd raj
-    when: myexpn.rc != 0
+    when: USER.rc != 0
 
   - name: print
     ansible.builtin.debug:
