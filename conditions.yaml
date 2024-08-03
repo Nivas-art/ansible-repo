@@ -3,18 +3,18 @@
   become: yes
   tasks:
   - name: command pass
-    ansible.builtin.command: id srinu
+    ansible.builtin.command: id raj
     ignore_errors: true
-    register: myexpn
+    register: USER
 
   - name: print myexpn
     ansible.builtin.debug:
-      msg: "{{myexpn}}"
+      msg: "{{USER}}"
 
   
-  - name: command passes
-    ansible.builtin.command: useradd srinu
-    when: myexpn !=0
+  #- name: command passes
+   # ansible.builtin.command: useradd srinu
+    #when: myexpn.rc != 0
 
   - name: print
     ansible.builtin.debug:
