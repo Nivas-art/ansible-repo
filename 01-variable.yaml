@@ -1,8 +1,8 @@
 - name: variable declare
   hosts: localhost
   vars:
-    COURSE: devops
-    DURATION: 120h
+    COURSE: "devops"
+    DURATION: "120h"
   task:
   - name: print info
     ansible.builtion.debug:
