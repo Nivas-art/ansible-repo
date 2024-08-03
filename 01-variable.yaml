@@ -3,7 +3,7 @@
   vars:
     COURSE: "devops"
     DURATION: "120h"
-  task:
+  tasks:
   - name: print info
     ansible.builtion.debug:
       mgs: "course_is {{COURSE}}, Duratioms is {{DURATION}}"
