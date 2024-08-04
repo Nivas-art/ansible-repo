@@ -20,7 +20,7 @@
       executable: pip3.9 # ansible python latest version dependence
   
   - name: check db pwd or not
-    community.mysql.mysql_info:
+    community.mysql.mysql_info: # gather the mysql info
       login_user: root
       login_password: ExpenseApp@1
       login_host: 54.208.118.137
