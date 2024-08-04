@@ -1,0 +1,27 @@
+- name: insatll mysql-server
+  hosts: web
+  become: yes
+  tasks:
+  - name: install server
+    ansible.builtin.dnf:
+      name: mysql-server
+      state: latest
+  - name: start and enabled
+    ansible.builtin.service:
+      name: mysqld
+      state: started
+      enabled: yes
+  
+  - name: check db pwd or not
+    community.mysql.mysql_info:
+      login_user: root
+      login_password: ExpenseApp@1
+      login_host: 54.208.118.137
+      filter: version
+    register: pwd-output
+  
+  - name: print output of pwd
+    ansible.builtin.debig:
+      msg: "{{ pwd-output }}"
+  
+  
