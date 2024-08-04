@@ -23,6 +23,6 @@
   
   - name: print output of pwd
     ansible.builtin.debug:
-      msg: "{{ pwd-output }}"
+      msg: {{ pwd-output }}
   
   
