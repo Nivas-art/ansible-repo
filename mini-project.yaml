@@ -19,10 +19,10 @@
       login_host: 54.208.118.137
       filter: version
     ignore_errors: yes
-    register: pwd-output
+    register: pwd_output
   
   - name: print output of pwd
     ansible.builtin.debug:
-      msg: "output: {{pwd-output}} "
+      msg: "output: {{pwd_output}} "
   
   
