@@ -18,10 +18,11 @@
       login_password: ExpenseApp@1
       login_host: 54.208.118.137
       filter: version
+    ignore_error: yes
     register: pwd-output
   
   - name: print output of pwd
-    ansible.builtin.debig:
+    ansible.builtin.debug:
       msg: "{{ pwd-output }}"
   
   
