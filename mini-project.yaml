@@ -18,7 +18,7 @@
       login_password: ExpenseApp@1
       login_host: 54.208.118.137
       filter: version
-    ignore_error: yes
+    ignore_errors: yes
     register: pwd-output
   
   - name: print output of pwd
