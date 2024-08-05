@@ -52,7 +52,7 @@
 
   - name: start and enable
     ansible.builtin.service:
-      name: nodejs
+      name: backend
       state: started
       enabled: yes
  
@@ -72,7 +72,7 @@
       state: import
       name: all
   
-  #- name: restart backend
-   # ansible.builtin.service:
-    #name: nodejs
-    #tate: restarted
+  - name: restart backend
+    ansible.builtin.service:
+      name: backend
+      state: restarted
