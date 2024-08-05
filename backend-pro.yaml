@@ -72,7 +72,7 @@
       state: import
       name: all
   
-  - name: restart backend
-    ansible.builtin.service:
-    name: nodejs
-    state: restarted
+  #- name: restart backend
+   # ansible.builtin.service:
+    #name: nodejs
+    #tate: restarted
